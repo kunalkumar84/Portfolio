@@ -1,0 +1,307 @@
+*{
+    margin:0%;
+    padding:0%;
+}
+body{
+    font-family:"roboto", sans-serif;;
+    background-color:rgba(17,16,16);
+    color:white;
+    flex-wrap:wrap;
+}
+
+nav{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:22px;
+    background-color:rgba(17,16,16);
+    position:fixed;
+    top:0%;
+    width:100%;
+    flex-wrap:wrap;
+
+
+}
+ul{
+    display:flex;
+    align-items:center;
+
+}
+ul li a:hover{
+    color:rgba(0,149,255);
+    border-bottom:2px solid rgba(0,149,255);
+}
+
+ul li {
+    list-style:none;
+}
+ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:19px;
+    margin-inline:22px;
+    
+}
+#bar{
+    display:none;
+}
+
+.logo{
+    font-size:22px;
+
+}
+.logo span{
+    color:rgba(0,153,255);
+    
+
+}
+.main{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+     margin-top:135px;
+     flex-wrap:wrap;
+}
+.mainText h3{
+    font-size:27px;
+}
+.mainText h1{
+    font-size:70px;
+
+}
+
+.mainText span{
+    color:rgba(0,153,255);
+}
+.mainText p{
+    font-size:30px;
+}
+.mainText button{
+    width:140px;
+    height:40px;
+    background-color:rgba(0,157,255);
+    font-size:19px;
+    border:none;
+    margin-top:24px;
+    color:white;
+   
+}
+button:hover{
+    border:2px solid rgba(0,149,255);
+    background-color:transparent;
+    cursor:pointer;
+}
+.main img{
+    width:400px;
+    height:450px;
+    margin-left:5%;
+    flex-wrap:wrap;
+}
+.head{
+    text-align:center;
+    padding:80px;
+}
+.head span{
+    color :rgba(0,140,255);
+}
+.about{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    background-color:rgba(28,28,28);
+    padding:60px;
+
+}
+.about img{
+    width:280px;
+    border-radius:50%;
+    border:4px solid rgba(0,136,255);
+    margin-inline:60px;
+}
+
+.aboutText p{
+    margin-top:22px;
+    font-size:19px;
+}
+.about h2 span{
+    color:rgba(0,140,255);
+}
+.about p span{
+    color:rgba(218,218,218);
+}
+.aboutText h2{
+    font-size:30px;
+
+}
+
+.service{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.card{
+    width:400px;
+    padding:22px;
+    background-color:rgba(34,34,34,);
+    margin-inline:20px;
+    border-radius:5px;
+    margin-top:22px;
+}
+.card p{
+    margin-top:11px;
+    font-size:17px;
+
+}
+.card i{
+    font-size:26px;
+}
+.card h3{
+    font-size:30px;
+}
+
+.mywork{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:20px;
+
+}
+.workcard{
+    width:340px;
+    height:310px;
+    background-color:#232323;
+    border-radius:5px;
+    margin-inline:20px;
+    padding:11px;
+    margin-top:22px;
+
+
+}
+.workcard img{
+    width:100%;
+    height:200px;
+}
+
+.workcard p{
+    margin-top:11px;
+
+}
+.workcard a{
+    text-decoration:none;
+    position:absolute;
+    margin-top:20px;
+    padding:6px 12px;
+    background-color:rgba(0,128,255);
+    color:white;
+
+
+    
+}
+
+.contact{
+    width:300px;
+    flex-wrap:wrap;
+    padding:20px;
+    background-color:#303030;
+    margin:auto;
+}
+
+.contact input{
+    width:90%;
+    padding:5px;
+    font-size:17px;
+    border:1px solid white;
+    background-color:transparent;
+    color:white;
+    margin-top:3px;
+
+}
+.contact p{
+    margin-top:20px;
+
+}
+.contact button{
+    margin-top:22px;
+    width:90px;
+    height:28px;
+    background-color:rgba(0,145,255);
+    color:white;
+    font-size:17px;
+    border:none;
+    
+}
+
+.footer{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    padding:55px;
+    margin-top:66px;
+    background-color:rgba(52,51,51);
+
+}
+.text{
+    margin-top:20px;
+}
+.text p{
+    margin-top:12px;
+
+}
+
+
+@media  screen and (max-width:1000px){
+    .main{
+        display:block;
+        text-align:center;
+        margin-top:155px;
+    }
+} 
+@media screen and (max-width:800px){
+    ul{
+        display:none;
+
+    }
+
+    .showData{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        padding:23px;
+        background-color:rgba(60,59,59);
+        gap:20px;
+        border-radius: 5px;
+        position:fixed;
+        top:75px;
+        right:3%;
+
+
+
+
+    }
+    #bar{
+        display:block;
+        font-size:25px;
+        cursor:pointer;
+    }
+}
+
+@media screen and (max-width:550px){
+    .mainText h1{
+        font-size:36px;
+    }
+    .mainText h3{
+        font-size:21px;;
+    }
+    .mainText p{
+        font-size:20px;
+    }
+    .mainText img{
+        width:150px;
+    height:100px;
+
+    }
+    .contact{
+        width:80%;
+    }
+}
